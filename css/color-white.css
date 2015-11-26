@@ -606,8 +606,8 @@ ul.link_lists li a:hover{ color:#e66a55;  }
 	}
 
 /* #hr separator and border */
-.borderTop{ border-top: 1px dotted #cccccc; }
-.borderBottom{ border-bottom: 1px dotted #cccccc;}
+.borderTop{ border-top: 1px solid #cccccc; }
+.borderBottom{ border-bottom: 1px solid #cccccc;}
 
 .borderTop.light_border{ border: 0; border-top: 1px dotted #aaaaaa !important;}
 .borderBottom.light_border{ border: 0; border-bottom: 1px dotted #aaaaaa !important;} 
