@@ -1795,7 +1795,7 @@ a.button.bannerType:hover {
 	.thumbItem_holder.noLeftBorder .thumbItem { border-right:  none !important; }	
 	.itemOver.popover_style2 .overlay{ 
 		background-color: #000000;
-  		background-color: rgba(0, 0, 0, .85); 
+  		background-color: rgba(0, 0, 0, .6); 
 		}	
 	.itemOver.popover_style2 .popup_overlay .popup_head h4 { 
 		color: #dddddd;

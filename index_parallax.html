@@ -74,7 +74,12 @@
     <![endif]-->
 
 
-	<script type="text/javascript" src="js/modernizr.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.min.js"></script>
+    <style>
+      p, h1, h2, h3, h4, h5{
+        word-break: keep-all;
+      }
+    </style>
 
 
 
@@ -135,7 +140,7 @@
          </div>
     </div>      
 </div>
-
+ 
 
 <!--
 Header Navigation Area
@@ -166,8 +171,8 @@ Header Navigation Area
         <ul class="nav smartMenu ">
             <!--  Add require site page navigation -->                    
             <li><a href="#!home" class="first active">WE ARE</a></li>
-            <li><a href="#!about">TEAM</a></li>
-            <li><a href="#!blog">BLOG</a></li>
+            <li><a onclick=" $('#my_team').get(0).scrollIntoView(); $('.smartMenu_btn').trigger('mousedown');">TEAM</a></li>
+            <li><a href="http://blog.naver.com/mintshampoo">BLOG</a></li>
         </ul>
     </nav>  
     
@@ -199,13 +204,6 @@ If you need this button just remove the comment code
     <div class="pageOpenTransition"></div>
     
     <nav class="fixedMenu fixedPos onlyTop closeIt">
-        <ul class="dotted-nav">
-                <li><a title="ABOUT" class="menu_link" href="#!about"><span></span></a></li>
-                <li><a title="SERVICES" class="menu_link" href="#!services"><span></span></a></li>
-                <li><a title="PORTFOLIO" class="menu_link" href="#!portfolio"><span></span></a></li>
-                <li><a title="BLOG" class="menu_link" href="#!blog"><span></span></a></li>
-                <li><a title="CONTACT US" class="menu_link" href="#!contactus"><span></span></a></li>
-            </ul>
         <div class="topBackground"></div>
     </nav>
     
@@ -216,7 +214,7 @@ If you need this button just remove the comment code
  
 <!-- About us page -->
 
-<div data-id="!about" class="contentWrapper" style="background-color:#ffc6bf;" >
+<div data-id="!about" class="contentWrapper" style="background-color:#fcbebb;" >
     
     <div class="pageContent addPageBorder" >
         
@@ -226,7 +224,7 @@ If you need this button just remove the comment code
 
             <div class="row">  
                 <div class="col-md-12 textAlignCenter" style="margin-top:7em;">
-                            <h4 style="color:#626262;" class="letterSpacing" data-animated-time="30" data-animated-in="animated fadeInUp">삶의 첫번째 파트에 주거를 놓습니다.<br>아름다운 집에 사는 즐거움은 누구나 누릴 수 있다는 생각,<br>아파트:멘터리가 시작합니다.</h4>
+                            <h4 style="color:#4d4d4d;" class="letterSpacing" data-animated-time="30" data-animated-in="animated fadeInUp">삶의 첫번째 파트에 주거를 놓습니다.<br>아름다운 집에 사는 즐거움은 누구나 누릴 수 있다는 생각,<br>아파트:멘터리가 시작합니다.</h4>
                 </div>
             </div>
             
@@ -234,7 +232,7 @@ If you need this button just remove the comment code
             <div class="row" >
                 <div class="col-md-12 textAlignCenter" >
             
-                        	<h2 data-animated-time="25" data-animated-in="animated fadeInDown" data-anchor-to="parent.parent" style="font-family: 'Work Sans', sans-serif; font-weight:200; color:white; text-shadow: 0px 1px #e5b2ac;">
+                        	<h2 data-animated-time="25" data-animated-in="animated fadeInDown" data-anchor-to="parent.parent" style="font-family: 'Work Sans', sans-serif; font-weight:400; color:white; text-shadow: 0px 1px #e5b2ac;">
                                  	“ no one lives like you ”</h2>
               </div>
 
@@ -276,7 +274,7 @@ If you need this button just remove the comment code
                 <p class="apt_content">아파트의 상태에 따라, 원하는 디자인에 따라 천차만별인 리모델링 비용.<br>내 눈높이에 맞춘 '잡지속 그 집'처럼 고치는 데는 평당 200만원이 훌쩍 넘는 비용이 드는 것이 현실입니다.<br><br>큰 맘먹고 산 집을 마음에 들게 고치는 것이 이렇게 어렵다니.<br>적은 예산만으로 내 취향대로 집을 고칠 수는 없을까요?</p>
               </div>
               <div class="col-md-6 col-md-offset-1 col-sm-12 textAlignCenter" style="padding-top:12em; margin-top:0; margin-bottom:0;padding-bottom:12em; ">
-                <img src="images/expensive.svg" style="width:80%;"/>
+                <img src="images/expensive.svg" style="width:60%;"/>
               </div>
             </div>
           </div>
@@ -309,7 +307,7 @@ If you need this button just remove the comment code
                 <p class="apt_content">매일 입는 옷도 코디하기 어려운데,<br>난생 처음하는 집고치기는 쉬울 리 없겠죠.<br><br>벽지 색깔부터 문고리모양, 바닥재에 이르기까지<br>집을 고치기 위해 필요한 수 많은 선택지.<br><br>백화점의 퍼스널 쇼퍼처럼<br>집고치기에 대해 조언해 줄 '내 편'은 없을까요?</p>
               </div>
               <div class="col-md-6 col-md-offset-1 col-sm-12 textAlignCenter" style="padding-top:12em; margin-top:0; margin-bottom:0;padding-bottom:12em; ">
-                <img src="images/shoper.svg" style="width:80%;"/>
+                <img src="images/shoper.svg" style="width:60%;"/>
               </div>
             </div>
           </div>
@@ -333,14 +331,14 @@ If you need this button just remove the comment code
           </div>
         </div>
 
-        <div class="relativePos fullWidth borderTop borderBottom " data-animated-time="2" data-animated-in="animated fadeInUp" data-animated-innerContent="yes" data-anchor-to="parent.parent" style="background-color:none;">            
+        <div id="about" class="relativePos fullWidth borderTop borderBottom " data-animated-time="2" data-animated-in="animated fadeInUp" data-animated-innerContent="yes" data-anchor-to="parent.parent" style="background-color:none;">            
           <hr class="separator_max">
           
             <div class="container">
               <div class="row">    
                 <div class="col-md-12 textAlignCenter" style="margin-top:7em;">
-                  <h4 style="margin-bottom:40px;"><img  style="width:80%;" src="images/white_logo6.png"/></h4>
-                  <h4 style="color:#626262; ">전문가들이 선별한 최상의 자재를 사용하여<br>오래도록 질리지 않는 공간을<br>투명하고 합리적인 표준가에 제공합니다.</h4>
+                  <h4 style="margin-bottom:50px;"><img  style="width:50%;" src="images/white_logo6.png"/></h4>
+                  <h4 style="color:#4d4d4d; ">전문가들이 선별한 최상의 자재를 사용하여<br>오래도록 질리지 않는 공간을<br>투명하고 합리적인 표준가에 제공합니다.</h4>
                 </div>
               </div>
               <hr class="separator_max">
@@ -410,47 +408,45 @@ If you need this button just remove the comment code
           </div>
         </div>
 
-        <div class="relativePos fullWidth borderTop borderBottom " data-animated-time="2" data-animated-in="animated fadeInUp" data-animated-innerContent="yes" data-anchor-to="parent.parent" style="background-color:#fff;">            
+        <div  class="relativePos fullWidth borderTop borderBottom " data-animated-time="2" data-animated-in="animated fadeInUp" data-animated-innerContent="yes" data-anchor-to="parent.parent" style="background-color:none;">            
+          <hr class="separator_max">
+          
+            <div class="container">
+              <div class="row">    
+                <div class="col-md-12 textAlignCenter" style="margin-top:7em;">
+                  <h3 style="font-family: 'Work Sans', sans-serif; font-weight:400; color:#4d4d4d;">
+                    no one lives like you . apart:mentary</h3>
+
+                  <h3><img style="width:50%; margin: 40px;" src="images/apartplus.svg"/></h3>
+
+                  <h4 >특별한 삶은 특별한 공간에서부터 시작됩니다.<br>획일화된 아파트,<br>그 속에서 자신만의 이야기를 만들어가는 사람들을 우리는 기록합니다.</h4>
+                </div>
+              </div>
+              <hr class="separator_max">
+              <hr class="separator_max">
+            </div>
+          </div>
+
+        <div id="my_team" class="relativePos fullWidth borderTop borderBottom " style="background-color:#fff;">            
 
 
           <div class="container" style="margin-top:12em;" >
     
           <!-- Elastislide carousel for Team viewer -->
-              <div class="row-fluid"  data-animated-time="0" data-animated-in="animated fadeInUp" data-animated-innerContent="yes" data-anchor-to="parent.parent.parent" >
+              <div  class="row-fluid"  data-animated-time="0" data-animated-in="animated fadeInUp" data-animated-innerContent="yes" data-anchor-to="parent.parent.parent" >
               
-                  <div class="col-md-3">
+                  <div class="col-md-3" >
                       <div class="thumbItem itemOver popover_style2 team_item" >                    
                           <div class="medium_image">   
                               <!-- Thumbnail image -->                 
-                              <img alt="image_alt_text" class="preload scale-with-grid" src="images/soyeon.svg" data-src="images/soyeon.svg" > 
+                              <img alt="image_alt_text" class="preload scale-with-grid" src="images/team_01.png" data-src="images/team_01.png" > 
                               <div class="overlay flatHover">
                                   <div class="popup_overlay" >
                                       
                                       <!-- Thumbnail overlay header text -->
                                       <div class="popup_head">
                                           
-                                          <h4>유쾌하게 '자신만의 길'을 만들어가기 위해 노력하는 여자, 윤소연.</h4>  
-                                          <div class="detail_text">                    
-                                              <div class="popup_text animated fadeInBottom">
-                                                  <div class="container">
-                                                      <div class="row">
-                                                          <div class="col-md-4">
-                                                               <img alt="image_alt_text" class="preload scale-with-grid" src="images/01_soyeon.png" data-src="images/01_soyeon.png" > 
-                                                          </div>
-                                                          <div class="col-md-8">
-                                                              <div class="pad_10">
-                                                                  <h4>윤소연</h4>
-                                                                  <h6>CEO. founder</h6>
-                                                                  <p>유쾌하게 '자신만의 길'을 만들어가기 위해 노력하는 여자, 윤소연.<br><br>인테리어 블로그 '칼슘가득 소이밀크'의 주인이자, 내 손으로 만들어가는 라이프 스타일을 집약한 '인테리어 원 북'의 저자.<br>언제나 새로운 도전을 즐기는 그녀는 안전한 삶 대신 '더 즐거운 삶'을 살기 위해 얼마전 MBC PD로의 삶을 정리하고 한 달 간의 긴 여행을 다녀왔다.</p>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>  
-                                               <a class="readMore removeIcon link_btn simple addBorder" href="#">
-                                                  <span>Read More</span> 
-                                              </a> 
-                                          </div>                    
+                                        <h4 style="font-weight:bold; padding-top: 60px; font-size: 12px !important;">유쾌하게 '자신만의 길'을<br>만들어가기 위해 노력하는 여자,<br>윤소연.</h4>  
                                       </div> 
                                   </div>                         
                               </div> 
@@ -461,10 +457,7 @@ If you need this button just remove the comment code
                                   <h5 class="item_title">윤 소 연</h5>
                                   <h5 class="item_sub_title">CEO. founder</h5>
                                   <ul class="font_awesome addFxEmbossBtn noBorder"> 
-                                      <li ><a class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                      <li ><a class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                      <li ><a class="googleplus"><i class="fa fa-google-plus"></i></a></li>
-                                      <li ><a class="linkedin"><i class="fa fa-linkedin"></i></a></li> 
+                                    <li ><a class="facebook"><img src="images/mail.svg"/></a></li>
                                   </ul>
                               </div>
                           </div>                                  
@@ -475,35 +468,13 @@ If you need this button just remove the comment code
                       <div class="thumbItem itemOver popover_style2 team_item" >                    
                           <div class="medium_image">   
                               <!-- Thumbnail image -->                 
-                              <img alt="image_alt_text" class="preload scale-with-grid" src="images/0.png" data-src="images/team_img5.jpg" > 
+                              <img alt="image_alt_text" class="preload scale-with-grid" src="images/team_02.png" data-src="images/team_02.png" > 
                               <div class="overlay flatHover">
                                   <div class="popup_overlay" >
                                       
                                       <!-- Thumbnail overlay header text -->
                                       <div class="popup_head">
-                                          <h4>Ellise leads successful social media campaigns for clients using the most current tools. </h4>  
-                                          
-                                          <div class="detail_text">                    
-                                              <div class="popup_text animated fadeInBottom">
-                                                  <div class="container">
-                                                      <div class="row">
-                                                          <div class="col-md-4">
-                                                               <img alt="image_alt_text" class="preload scale-with-grid" src="images/0.png" data-src="images/team_img5.jpg" > 
-                                                          </div>
-                                                          <div class="col-md-8">
-                                                              <div class="pad_10">
-                                                                  <h3>Ellise Doe</h3>
-                                                                  <h6>Social Media & Web Developer</h6>
-                                                                  <p>Consectetuer adipiscing elit euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit, Nibh euismod tlaoreet dolore magna aliquam erat volutpat. sed diam nonummy magna aliquam erat volutpat consectetuer adipiscing elit.</p>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>   
-                                              <a class="readMore removeIcon link_btn simple addBorder" href="#">
-                                                  <span>Read More</span> 
-                                              </a>
-                                          </div>                    
+                                        <h4 style="font-weight:bold; padding-top: 60px; font-size: 12px !important;">고요함 속에서 늘 진중하게<br>자신의 미래를 그려가는 남자,<br>하태웅</h4>  
                                       </div>                                
                                   </div>                         
                               </div> 
@@ -511,13 +482,10 @@ If you need this button just remove the comment code
                           <!-- Thumbnail Description -->
                           <div class="thumb_desc noSpacing pad_10 textAlignCenter">
                               <div class="thumb_desc_holder">
-                                  <h5 class="item_title">Ellise Doe</h5>
-                                  <h5 class="item_sub_title">Web Developer</h5>
+                                  <h5 class="item_title">하태웅</h5>
+                                  <h5 class="item_sub_title">CDO. co-founder</h5>
                                   <ul class="font_awesome addFxEmbossBtn noBorder"> 
-                                      <li ><a class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                      <li ><a class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                      <li ><a class="googleplus"><i class="fa fa-google-plus"></i></a></li>
-                                      <li ><a class="linkedin"><i class="fa fa-linkedin"></i></a></li> 
+                                    <li ><a class="facebook"><img src="images/mail.svg"/></a></li>
                                   </ul>
                               </div>
                           </div>                                  
@@ -529,35 +497,13 @@ If you need this button just remove the comment code
                       <div class="thumbItem itemOver popover_style2 team_item" >                    
                           <div class="medium_image">   
                               <!-- Thumbnail image -->                 
-                              <img alt="image_alt_text" class="preload scale-with-grid" src="images/0.png" data-src="images/team_img6.jpg" > 
+                              <img alt="image_alt_text" class="preload scale-with-grid" src="images/team_03.png" data-src="images/team_03.png" > 
                               <div class="overlay flatHover">
                                   <div class="popup_overlay" >
                                       
                                       <!-- Thumbnail overlay header text -->
                                       <div class="popup_head">
-                                          <h4>Michele John stretch out in art, design and multimedia. He challenge of creating a visual representation</h4>  
-                                          
-                                          <div class="detail_text">                    
-                                              <div class="popup_text animated fadeInBottom">
-                                                  <div class="container">
-                                                      <div class="row">
-                                                          <div class="col-md-4">
-                                                               <img alt="image_alt_text" class="preload scale-with-grid" src="images/0.png" data-src="images/team_img6.jpg" > 
-                                                          </div>
-                                                          <div class="col-md-8">
-                                                              <div class="pad_10">
-                                                                  <h3>Michele John</h3>
-                                                                  <h6>Graphic Designer</h6>
-                                                                  <p>Consectetuer adipiscing elit euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit, Nibh euismod tlaoreet dolore magna aliquam erat volutpat. sed diam nonummy magna aliquam erat volutpat consectetuer adipiscing elit.</p>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>   
-                                              <a class="readMore removeIcon link_btn simple addBorder" href="#">
-                                                  <span>Read More</span> 
-                                              </a>
-                                          </div>                    
+                                        <h4 style="font-weight:bold; padding-top: 60px; font-size: 12px !important;">본능에 충실한 본생본사,<br>한은비</h4>  
                                       </div>
        
                                   </div>                         
@@ -566,13 +512,10 @@ If you need this button just remove the comment code
                           <!-- Thumbnail Description -->
                           <div class="thumb_desc noSpacing pad_10 textAlignCenter">
                               <div class="thumb_desc_holder">
-                                  <h5 class="item_title">Michele John</h5>
-                                  <h5 class="item_sub_title">Graphic Designer</h5>
+                                  <h5 class="item_title">한은비</h5>
+                                  <h5 class="item_sub_title">planning, marketing</h5>
                                    <ul class="font_awesome addFxEmbossBtn noBorder"> 
-                                      <li ><a class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                      <li ><a class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                      <li ><a class="googleplus"><i class="fa fa-google-plus"></i></a></li>
-                                      <li ><a class="linkedin"><i class="fa fa-linkedin"></i></a></li> 
+                                    <li ><a class="facebook"><img src="images/mail.svg"/></a></li>
                                   </ul>
                               </div>
                           </div>                                  
@@ -584,35 +527,13 @@ If you need this button just remove the comment code
                       <div class="thumbItem itemOver popover_style2 team_item" >                    
                           <div class="medium_image">   
                               <!-- Thumbnail image -->                 
-                              <img alt="image_alt_text" class="preload scale-with-grid" src="images/0.png" data-src="images/team_img4.jpg" > 
+                              <img alt="image_alt_text" class="preload scale-with-grid" src="images/team_04.png" data-src="images/team_04.png" > 
                               <div class="overlay flatHover">
                                   <div class="popup_overlay" >
                                       
                                       <!-- Thumbnail overlay header text -->
                                       <div class="popup_head">
-                                          <h4>Lisa Andreson pivoted to a career in web development and gained as a backend develop & error fixing.</h4>  
-                                          
-                                          <div class="detail_text">                    
-                                              <div class="popup_text animated fadeInBottom">
-                                                  <div class="container">
-                                                      <div class="row">
-                                                          <div class="col-md-4">
-                                                               <img alt="image_alt_text" class="preload scale-with-grid" src="images/0.png" data-src="images/team_img4.jpg" > 
-                                                          </div>
-                                                          <div class="col-md-8">
-                                                              <div class="pad_10">
-                                                                  <h3>Lisa Andreson</h3>
-                                                                  <h6>Developer</h6>
-                                                                  <p>Consectetuer adipiscing elit euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit, Nibh euismod tlaoreet dolore magna aliquam erat volutpat. sed diam nonummy magna aliquam erat volutpat consectetuer adipiscing elit.</p>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>   
-                                              <a class="readMore removeIcon link_btn simple addBorder" href="#">
-                                                  <span>Read More</span> 
-                                              </a>
-                                          </div>                    
+                                        <h4 style="font-weight:bold; padding-top: 60px; font-size: 12px !important;">꿈을 쫓아 자신만의 인생을<br>디자인하는 그녀,<br>김지원</h4>  
                                       </div>  
                                   </div>                         
                               </div> 
@@ -620,13 +541,10 @@ If you need this button just remove the comment code
                           <!-- Thumbnail Description -->
                           <div class="thumb_desc noSpacing pad_10 textAlignCenter">
                               <div class="thumb_desc_holder">
-                                  <h5 class="item_title">Lisa Andreson</h5>
-                                  <h5 class="item_sub_title">Developer</h5>
+                                  <h5 class="item_title">김지원</h5>
+                                  <h5 class="item_sub_title">interior designer</h5>
                                   <ul class="font_awesome addFxEmbossBtn noBorder"> 
-                                      <li ><a class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                      <li ><a class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                      <li ><a class="googleplus"><i class="fa fa-google-plus"></i></a></li>
-                                      <li ><a class="linkedin"><i class="fa fa-linkedin"></i></a></li> 
+                                    <li ><a class="facebook"><img src="images/mail.svg"/></a></li>
                                   </ul>
                               </div>
                           </div>                                  
@@ -637,7 +555,6 @@ If you need this button just remove the comment code
             </div>
           </div>
 
-      <hr class="separator_mini">
 
     
 </div> 
