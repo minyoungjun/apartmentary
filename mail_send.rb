@@ -9,14 +9,15 @@ post '/' do
 	    :password  => "4813b0b2c30dcf1a097e94c5f18d45d7",
 	openssl_verify_mode: 'none'
 	  }
-	end
+  end
+
 	if params[:fix].to_i == 0
 		my_subject = "[집고치기에 관심]" + params[:name]
 	else
 		my_subject = "[파트너쉽에 관심]" + params[:name]
 	end
 
-	content = params[:content]
+	content = params[:email]
 
 	mail = Mail.deliver do
 	  to      'apartmentary@naver.com'
@@ -28,6 +29,8 @@ post '/' do
 	  end
 	end
 
-	"success"
+	"<script>alert('메일이 전송되었습니다!');
+  location.href='aptmentary.com';
+  </script>"
 end
 set :environment, :production

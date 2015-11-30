@@ -961,7 +961,6 @@ input[type="url"],
 textarea {
 	color: #2a2a2a;
 	border:none;
-	background-color:#eeeeee;
 	}		
 label {color: ##5a5a5a;}
 
@@ -1436,7 +1435,7 @@ a.next_button_pro, a.previous_button_pro, a.close_button_pro{
 
 .linkText{
 	border: #fbfbfb solid 0px;
-	background-color:#2a2a2a;
+	background-color:#ffaca1;
 	color:#ffffff;		
 	}		
 .linkText:hover{ 
