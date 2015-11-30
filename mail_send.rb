@@ -30,7 +30,7 @@ post '/' do
 	end
 
 	"<script>alert('메일이 전송되었습니다!');
-  location.href='aptmentary.com';
+  location.href='http://aptmentary.com';
   </script>"
 end
 set :environment, :production
