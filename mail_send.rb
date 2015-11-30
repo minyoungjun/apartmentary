@@ -20,7 +20,7 @@ post '/' do
 	content = params[:email]
 
 	mail = Mail.deliver do
-    to      'minyoung9353@gmail.com' #'apartmentary@naver.com'
+    to      'apartmentary@naver.com'
 	  from    'admin@apart.mailgun.org'
 	  subject my_subject
 
